@@ -3,9 +3,6 @@
  * It provides functionality to calculate and display the price of copper in the SkyMart inventory.
  * The class subscribes to various events to handle inventory opening, closing, and rendering.
  */
-class SkyMartCopperPrice {
-    // ...
-}
 package at.hannibal2.skyhanni.features.garden.inventory
 
 import at.hannibal2.skyhanni.config.ConfigUpdaterMigrator
@@ -27,6 +24,9 @@ import at.hannibal2.skyhanni.utils.RenderUtils.renderStringsAndItems
 import at.hannibal2.skyhanni.utils.StringUtils.matchMatcher
 import net.minecraft.item.ItemStack
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+
+import at.hannibal2.skyhanni.utils.LorenzUtils
+import at.hannibal2.skyhanni.utils.LorenzUtils.addAsSingletonLists
 
 class SkyMartCopperPrice {
     private val copperPattern = "§c(?<amount>.*) Copper".toPattern()

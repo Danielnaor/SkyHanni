@@ -20,8 +20,10 @@ import at.hannibal2.skyhanni.utils.StringUtils.matchMatcher
 import net.minecraft.item.ItemStack
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 
-import kotlin.time.Duration.Companion.seconds
 
+import kotlin.time.Duration.Companion.seconds
+import at.hannibal2.skyhanni.utils.LorenzUtils
+import at.hannibal2.skyhanni.utils.LorenzUtils.addAsSingletonList
 /**
  * This class represents a feature in the garden inventory called SkyMartCopperPrice.
  * It provides functionality to calculate and display the price of copper in the SkyMart inventory.
@@ -70,13 +72,9 @@ class SkyMartCopperPrice {
         if (event.inventoryName != "SkyMart") return
 
         
-                LorenzUtils.sendTitle("§SkyMart just opened!", 4.seconds)
-                    LorenzUtils.chat("§cSkyMart just opened!")
+        LorenzUtils.sendTitle("§SkyMart just opened!", 4.seconds)
+        LorenzUtils.chat("§cSkyMart just opened!")
     
-            
-
-
-
         inInventory = true
         val table = mutableMapOf<Pair<String, String>, Pair<Double, NEUInternalName>>()
         for (stack in event.inventoryItems.values) {

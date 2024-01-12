@@ -70,10 +70,11 @@ class SkyMartCopperPrice {
         if (event.inventoryName != "SkyMart") return
 
         if (config.
-                LorenzUtils.sendTitle("§c
+                LorenzUtils.sendTitle("§SkyMart just opened!", 4.seconds)
             }
-            LorenzUtils.chat("§cYour Organic Matter is low!")
+            LorenzUtils.chat("§cSkyMart just opened!")
     
+            
 
 
 

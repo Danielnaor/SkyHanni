@@ -26,4 +26,12 @@ public class SkyMartConfig {
 
     @Expose
     public Position copperPricePos = new Position(211, 132, false, true);
+
+    /**
+     * insert a new confige item that will notify me when the openedinventory 
+     */
+    @Expose
+    @ConfigOption(name = "Notification when SkyMart is opened", desc = "Show a notification when the SkyMart is opened.")
+    @Accordion
+    public NotifySkyMartConfig notifySkyMart = new NotifySkyMartConfig();
 }

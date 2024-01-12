@@ -1,3 +1,11 @@
+/**
+ * This class represents a feature in the garden inventory called SkyMartCopperPrice.
+ * It provides functionality to calculate and display the price of copper in the SkyMart inventory.
+ * The class subscribes to various events to handle inventory opening, closing, and rendering.
+ */
+class SkyMartCopperPrice {
+    // ...
+}
 package at.hannibal2.skyhanni.features.garden.inventory
 
 import at.hannibal2.skyhanni.config.ConfigUpdaterMigrator
@@ -47,11 +55,27 @@ class SkyMartCopperPrice {
         }
         return list
     }
+    
+    /**
+     * Handles the event when the inventory is fully opened.
+     * If the feature is enabled and the inventory name is "SkyMart", it populates a table with the coins per copper ratio for each item in the inventory.
+     * The table is then displayed in the UI.
+     *
+     * @param event The InventoryFullyOpenedEvent.
+     */
 
     @SubscribeEvent
     fun onInventoryOpen(event: InventoryFullyOpenedEvent) {
         if (!isEnabled()) return
         if (event.inventoryName != "SkyMart") return
+
+        if (config.
+                LorenzUtils.sendTitle("§c
+            }
+            LorenzUtils.chat("§cYour Organic Matter is low!")
+    
+
+
 
         inInventory = true
         val table = mutableMapOf<Pair<String, String>, Pair<Double, NEUInternalName>>()
@@ -93,7 +117,7 @@ class SkyMartCopperPrice {
     }
 
     @SubscribeEvent
-    fun onBackgroundDraw(event: GuiRenderEvent.ChestGuiOverlayRenderEvent) {
+    fun onBackgroundDraw(event: GuiRenderEvent.ChestGuiOverlayRenderEvent) {  
         if (inInventory) {
             config.copperPricePos.renderStringsAndItems(
                 display,

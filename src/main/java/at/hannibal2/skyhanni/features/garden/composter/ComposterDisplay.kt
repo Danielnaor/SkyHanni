@@ -121,7 +121,7 @@ class ComposterDisplay {
                 LorenzUtils.sendTitle("§cYour Organic Matter is low", 4.seconds)
             }
             LorenzUtils.chat("§cYour Organic Matter is low!")
-            storage.informedAboutLowMatter = System.currentTimeMillis() + 60_000 * 5
+            storage.informedAboutLowMatter = System.currentTimeMillis() + 60_000 * 5 
         }
 
         if (ComposterAPI.getFuel() <= config.notifyLow.fuel &&

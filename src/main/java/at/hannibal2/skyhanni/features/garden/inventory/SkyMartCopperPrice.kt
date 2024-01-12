@@ -22,8 +22,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 
 
 import kotlin.time.Duration.Companion.seconds
-import at.hannibal2.skyhanni.utils.LorenzUtils
-import at.hannibal2.skyhanni.utils.LorenzUtils.addAsSingletonList
 /**
  * This class represents a feature in the garden inventory called SkyMartCopperPrice.
  * It provides functionality to calculate and display the price of copper in the SkyMart inventory.

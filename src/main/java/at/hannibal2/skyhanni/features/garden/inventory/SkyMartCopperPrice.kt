@@ -114,6 +114,11 @@ class SkyMartCopperPrice {
 
     @SubscribeEvent
     fun onBackgroundDraw(event: GuiRenderEvent.ChestGuiOverlayRenderEvent) {  
+
+        LorenzUtils.sendTitle("§SkyMartCopperPrice.kt --> onBackgroundDraw", 4.seconds)
+        LorenzUtils.chat("§cSkyMartCopperPrice.kt --> onBackgroundDraw")
+
+        
         if (inInventory) {
             config.copperPricePos.renderStringsAndItems(
                 display,

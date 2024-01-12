@@ -1,8 +1,3 @@
-/**
- * This class represents a feature in the garden inventory called SkyMartCopperPrice.
- * It provides functionality to calculate and display the price of copper in the SkyMart inventory.
- * The class subscribes to various events to handle inventory opening, closing, and rendering.
- */
 package at.hannibal2.skyhanni.features.garden.inventory
 
 import at.hannibal2.skyhanni.config.ConfigUpdaterMigrator
@@ -27,7 +22,11 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 
 import kotlin.time.Duration.Companion.seconds
 
-
+/**
+ * This class represents a feature in the garden inventory called SkyMartCopperPrice.
+ * It provides functionality to calculate and display the price of copper in the SkyMart inventory.
+ * The class subscribes to various events to handle inventory opening, closing, and rendering.
+ */
 
 class SkyMartCopperPrice {
     private val copperPattern = "§c(?<amount>.*) Copper".toPattern()

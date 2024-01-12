@@ -6,6 +6,9 @@ import com.google.gson.annotations.Expose;
 import io.github.moulberry.moulconfig.annotations.ConfigEditorBoolean;
 import io.github.moulberry.moulconfig.annotations.ConfigEditorSlider;
 import io.github.moulberry.moulconfig.annotations.ConfigOption;
+import io.github.moulberry.moulconfig.annotations.Accordion;
+import at.hannibal2.skyhanni.config.features.garden.NotifySkyMartConfig;
+
 
 public class SkyMartConfig {
     @Expose

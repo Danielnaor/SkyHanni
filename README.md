@@ -9,6 +9,8 @@
 [![discord badge](https://img.shields.io/discord/997079228510117908?label=discord&color=9089DA&logo=discord&style=for-the-badge)](https://discord.gg/skyhanni-997079228510117908)
 [![made with kotlin](https://img.shields.io/badge/Made%20With-Kotlin-orange?style=for-the-badge&logo=kotlin&logocolor=white)](https://kotlinlang.org/)
 [![downloads](https://img.shields.io/github/downloads/hannibal002/SkyHanni/total?label=downloads&color=208a19&logo=github&style=for-the-badge)](https://github.com/hannibal00212/SkyHanni/releases)
+
+[![Build with JAR](https://github.com/Danielnaor/SkyHanni/actions/workflows/Build%20with%20JAR.yml/badge.svg)](https://github.com/Danielnaor/SkyHanni/actions/workflows/Build%20with%20JAR.yml)
 </div>
 
 SkyHanni is a Forge mod for Minecraft 1.8.9. It adds many features to Hypixel SkyBlock.
